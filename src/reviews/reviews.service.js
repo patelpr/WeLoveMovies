@@ -12,15 +12,18 @@ function read(review_id) {
 }
 
 function update(updatedReview) {
-    const {review_id} = updatedReview
-  
-    knex("reviews as r")
-        .where({ review_id })
-        .update(updatedReview, "*")
-        .then((updatedRecords) => updatedRecords[0]);
-    
-  return knex("reviews as r").join('critics as c','r.critic_id','c.critic_id')
-    .select("r.*", "c.*").where({review_id}).then(addCritic)
+  const { review_id } = updatedReview;
+
+  knex("reviews as r")
+    .where({ review_id })
+    .update(updatedReview, "*")
+    .then((updatedRecords) => updatedRecords[0]);
+
+  return knex("reviews as r")
+    .join("critics as c", "r.critic_id", "c.critic_id")
+    .select("r.*", "c.*")
+    .where({ review_id })
+    .then(addCritic);
 }
 
 function destroy(id) {

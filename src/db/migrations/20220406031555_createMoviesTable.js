@@ -7,9 +7,7 @@ exports.up = function (knex) {
     table.integer("runtime_in_minutes");
     table.text("description");
     table.timestamps(true, true);
-
   });
-
 };
 
 exports.down = function (knex) {

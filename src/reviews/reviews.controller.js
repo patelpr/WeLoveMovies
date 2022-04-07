@@ -17,8 +17,8 @@ async function update(req, res) {
     review_id: res.locals.review.review_id,
   };
   const data = await service.update(updatedReview);
-data[0].critic = data[0].critic[0];
-  res.json({ data:data[0] });
+  data[0].critic = data[0].critic[0];
+  res.json({ data: data[0] });
 }
 
 async function destroy(req, res) {

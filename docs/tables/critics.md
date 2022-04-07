@@ -19,4 +19,5 @@ An example record looks like the following:
   "updated_at": "2021-02-23T20:48:13.315Z"
 }
 ```
+
 To create the `created_at` and `updated_at` fields you can use the timestamps method in your migration file (e.g. `table.timestamps(true, true);`). You can read more about timestamps [here](https://knexjs.org/#Schema-timestamps).
