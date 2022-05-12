@@ -34,6 +34,7 @@ Voila!
 | Method | Endpoint | Description |
 |--|--|--|
 |GET|/movies|List all movies|
+|GET|/movies?is_showing=true|List all movies currently playing in theaters|
 |GET|/movies/:movieId| Get a movie by ID|
 |GET|/movies/:movieId/theaters|Get a list of all theaters playing a specific movie|
 |GET|/movies/:movieId/reviews|Get a list of all reviews for a movie|
