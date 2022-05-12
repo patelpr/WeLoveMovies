@@ -39,8 +39,7 @@ Voila!
 |GET|/movies/:movieId/reviews|Get a list of all reviews for a movie|
 |PUT|/reviews/:reviewId|Update review and add critic|
 |DELETE|/reviews/:reviewId|Delete review  by ID|
-|PUT|/theaters/|List all theaters and movies at each theater|
-|
+|PUT|/theaters/|List all theaters and movies at each theater||
 
 ## TABLES
 ### CRITICS
